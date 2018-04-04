@@ -6,11 +6,17 @@
  * Time: 下午3:56
  */
 
-class DemoTest extends PHPUnit_Framework_TestCase {
-    public function testPass() {
+require_once './vendor/autoload.php';
+
+class DemoTest extends PHPUnit_Framework_TestCase
+{
+    public function testPass()
+    {
         $this->assertTrue(true);
     }
-    public function testFail() {
+
+    public function testFail()
+    {
         $this->assertFalse(false);
     }
 }
