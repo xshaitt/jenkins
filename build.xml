@@ -23,8 +23,6 @@
 
     <target name="check" description="Check variables" >
         <fail unless="version" message="Version not defined!" />
-        <fail unless="buildnumber" message="buildnumber not defined!" />
-        <fail unless="buildid" message="buildid not defined!" />
         <delete dir="dist" failonerror="false" />
         <mkdir dir="dist" />
     </target>
