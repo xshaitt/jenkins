@@ -26,12 +26,4 @@
         <delete dir="dist" failonerror="false" />
         <mkdir dir="dist" />
     </target>
-
-    <target name="tar" depends="check" description="Create tar file for release">
-        <echo msg="Creating distribution tar for ${phing.project.name} ${version}"/>
-        <delete file="${distfile}" failonerror="false"/>
-        <tar destfile="${distfile}" compression="gzip">
-            <fileset refid="api.tar.gz"/>
-        </tar>
-    </target>
 </project>
